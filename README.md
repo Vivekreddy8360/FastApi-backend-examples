@@ -9,9 +9,10 @@ The focus of this repository is **hands-on practice**, not theory.
 
 ## 📁 Project Structure
 
+```text
 FastApi-backend-examples/
 ├── basics/
-├── sql_and_files/
+└── sql_and_files/
 
 ---
 
