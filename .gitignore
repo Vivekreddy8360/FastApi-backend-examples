@@ -10,8 +10,14 @@ myenv/
 # Environment files
 .env
 
+# Database files
+*.db
+
 # Uploads (comment out if you want to keep sample uploads)
 # uploads/
+
+# VS Code settings
+.vscode/
 
 # OS files
 Thumbs.db

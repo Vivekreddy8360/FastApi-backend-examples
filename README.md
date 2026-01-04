@@ -10,8 +10,13 @@ The focus of this repository is **hands-on practice**, not theory.
 ## 📁 Project Structure
 
 FastApi-backend-examples/
+├── auth/
 ├── basics/
 ├── sql_and_files/
+├── images/
+├── README.md
+└── .gitignore
+
 
 ---
 
@@ -35,6 +40,15 @@ This folder contains **intermediate FastAPI concepts**, including:
 - Form and file combined requests
 - Basic SQLAlchemy models
 - SQLite database usage
+
+---
+### 🔐 Register API
+![Register API](images/01_register_api.png)
+![Register Response](images/02_register_api_response.png)
+
+### 🔑 Login API
+![Login API](images/03_login_api.png)
+![Login Response](images/04_login_api_response.png)
 
 ---
 
