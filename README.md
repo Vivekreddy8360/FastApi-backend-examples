@@ -9,6 +9,7 @@ The focus of this repository is **hands-on practice**, not theory.
 
 ## 📁 Project Structure
 
+```text
 FastApi-backend-examples/
 ├── auth/
 ├── basics/
@@ -16,7 +17,7 @@ FastApi-backend-examples/
 ├── images/
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -57,6 +58,8 @@ This folder contains **intermediate FastAPI concepts**, including:
 - FastAPI
 - SQLAlchemy
 - SQLite
+- Secure password hashing using bcrypt
+
 
 ---
 
