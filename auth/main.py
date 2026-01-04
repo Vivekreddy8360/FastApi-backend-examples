@@ -4,7 +4,10 @@ from contextlib import asynccontextmanager
 from typing import Annotated
 from passlib.context import CryptContext
 
-from .models import User, CreateUser ,LoginUser  # make sure class names are correct
+from .models import User, CreateUser ,LoginUser
+from jose import JWTError, jwt
+from datetime import datetime,timedelta,timezone
+from fastapi.security import OAuth2PasswordBearer,OAuth2PasswordRequestForm
 
 DATABASE_URL = "sqlite:///./users.db"
 engine = create_engine(DATABASE_URL, echo=True)
@@ -27,7 +30,7 @@ SessionDep = Annotated[Session, Depends(get_session)]
 # ------------------ AUTH ------------------
 pwd_context = CryptContext(
     schemes=["bcrypt"],
-    deprecated="auto"   # ✅ fixed spelling
+    deprecated="auto"  
 )
 
 def hash_password(password: str) -> str:
